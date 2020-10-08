@@ -6,7 +6,7 @@ body {
 }
 
 .movie-card {
-  background-color: #fff;
+  background-color: white;
   border: 0;
   box-shadow: 0 -1px 0 #e0e0e0, 0 0 2px rgba(0, 0, 0, 0.12),
     0 2px 4px rgba(0, 0, 0, 0.24);
@@ -57,21 +57,103 @@ body {
   position: absolute;
   top: 25px;
   right: 25px;
-  border: 1px solid grey;
   padding: 5px 10px;
-  background-color: lightseagreen;
+  background-color: rgb(83, 241, 83);
+  border-radius: 10px;
 }
 .save-button:hover {
-  background-color: green;
+  background-color: rgb(182, 43, 1);
   color: white;
 }
 
 .home-button {
   padding: 5px 10px;
-  background-color: lightskyblue;
+  background-color: rgb(141, 226, 252);
+  border-radius: 5px;
 }
 
 .movie-warning {
   color: red;
   text-align: center;
+}
+.edit-button {
+  position: absolute;
+  top: 25px;
+  right: 115px;
+  border: 1px solid grey;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.edit-button:hover {
+  background-color: rgb(86, 80, 180);
+  color: white;
+}
+/* Styles for Edit */
+.form-wrapper {
+  width: 75%;
+  margin: 0 auto;
+  padding: 1rem;
+  border: 0;
+  box-shadow: 0 -1px 0 #00631e, 0 0 2px rgba(0, 0, 0, 0.12),
+    0 2px 4px rgba(0, 0, 0, 0.24);
+  background-color: rgb(236, 248, 241);
+}
+
+.back-button {
+  cursor: pointer;
+  border: 1px solid rgb(128, 110, 110);
+  padding: 5px 10px;
+  width: 70px;
+  text-align: center;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.form-wrapper form {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin: 0 auto;
+}
+
+.form-wrapper form label {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.form-wrapper form input {
+  height: 30px;
+  font-size: 15px;
+}
+
+.form-submit {
+  margin: 30px auto;
+  border: none;
+  background-color: rgb(86, 80, 180);
+  color: white;
+  cursor: pointer;
+  width: 150px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.form-submit:hover {
+  background-color: green;
+}
+
+/* Styles for add */
+.add-movie {
+  margin: 5px auto;
+  border: 1px solid grey;
+  padding: 5px 5px;
+  cursor: pointer;
+  width: 150px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.add-movie:hover {
+  background-color: rgb(86, 80, 180);
+  color: white;
 }
